@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    border: 2px solid black;
+    padding: 20px 20px 20px 20px;
+}
+h1{
+    text-align: center;
+    padding: 20px 0;
+}
+.count_down{
+    display: flex;
+    text-align: center;
+    gap: 60px;
+    margin: 20px 0;
+}
+.count_down .div input{
+    max-width:120px;
+    padding: 15px 0;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 48px;
+    
+}
