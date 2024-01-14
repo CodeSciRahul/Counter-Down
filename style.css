@@ -42,6 +42,22 @@ body>div img{
     }
     
 }
+.rightinput{
+    animation-name: himanshi;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    text-align: center;
+}
+@keyframes himanshi {
+    from{
+        transform: translateY(-600px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+}
 .container{
     border: 2px solid black;
     padding: 20px 20px 20px 20px;

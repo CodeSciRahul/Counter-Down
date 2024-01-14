@@ -20,8 +20,12 @@ btn.addEventListener("click", () => {
     let year = currentDate.getFullYear();
     let month = currentDate.getMonth();
     let endDate = new Date(year, month, date, getime[0], getime[1]);
-    setInterval(() => {
-        countDown(endDate);
+    let intervalied=setInterval(() => {
+       let result=countDown(endDate);
+       if(result===0)
+       {
+        clearInterval(intervalied);
+       }
     }, 1000);
 }
   
@@ -32,7 +36,15 @@ function countDown(endDate) {
     let diff = (endDate - startDate) / 1000;
     if (endDate < startDate) 
     {
-        return 0;
+        let div=document.querySelector("body>div");
+        let txt=document.querySelector("body>div>h3");
+        txt.innerText="Time's up! A countdown concludes, leaving behind cherished moments. Hope you enjoyed the journey!";
+        let img=document.createElement("img");
+       let gif= div.appendChild(img);
+       gif.src="https://www.angrybirds.com/wp-content/uploads/2023/06/Red-heartSign.gif";
+       gif.className="rightinput";
+       txt.className="rightinput";
+       return 0;
     };
     let inputs = document.querySelectorAll(".div input");
     let day = Math.floor(diff / 3600 / 24);
@@ -43,5 +55,5 @@ function countDown(endDate) {
     inputs[1].value = hour;
     inputs[2].value = minut;
     inputs[3].value = second;
-    return 0;
+    return 1;
 }
