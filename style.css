@@ -1,22 +1,100 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+body div h3{
+    width: 320px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+body>div img{
+    border-radius: 10px;
+    width: 320px;
+    margin:0 200px 0 1px;
+}
+.wrongInput{
+    animation-name: rahul;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    text-align: center;
+
+}
+@keyframes rahul {
+    from{
+        transform: translateX(-550px);
+
+    }
+    to{
+        transform: translateX(0);
+    }
+    
 }
 .container{
     border: 2px solid black;
     padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right top, #051937, #35255a, #732670, #b31770, #eb125c);
+    box-shadow: rgba(0, 0, 0, 0.6) -7px 7px 6px 2px inset;
 }
 h1{
     text-align: center;
     padding: 20px 0;
+    color: white;
 }
+.ipbt{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.ipbt input{
+    width: 22%;
+    margin: 0 30px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    background-image: linear-gradient(to right top, #c98ae2, #da72ca, #e756aa, #ed3885, #eb125c);
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: inset -4px 4px 6px 2px rgba(0,0,0 ,0.6);
+}
+.ipbt button{
+    width: 20%;
+    padding: 12px 0;
+    border-radius: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    opacity: 0.9;
+    box-shadow: inset -4px 4px 6px 2px rgba(0,0,0 ,0.6);
+}
+.ipbt button:hover{
+    scale: 1.02;
+    color: white;
+    opacity: 1;
+}
+.ipbt button:active{
+  transform: translate3d(2px,2px,2px);
+}
+
 .count_down{
     display: flex;
     text-align: center;
@@ -29,5 +107,12 @@ h1{
     border-radius: 20px;
     text-align: center;
     font-size: 48px;
-    
+    background-image: linear-gradient(to right top, #c98ae2, #da72ca, #e756aa, #ed3885, #eb125c);
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    box-shadow: inset -8px 7px 10px 0px rgba(255,255,255 ,1);
+}
+.div :nth-child(2){
+    color: whitesmoke;
 }

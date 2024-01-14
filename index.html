@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+        <h3></h3>
+        <!-- <img src="https://www.angrybirds.com/wp-content/uploads/2023/06/blinking_red.gif" alt=""> -->
+    </div>
     <div class="container">
         <div class="end_date">
             <h1>Count Down</h1>
-            <input type="datetime-local" placeholder="Enter end Date" id="end_time">
+            <div class="ipbt">
+                <input type="number" id="date" placeholder="Date">
+            <input type="time" id="end_time">
+            <button>start</button>
+        </div>
         </div>
         <div class="count_down">
+
             <div class="div">
                 <input type="text" readonly value="0">
-                <div>Date</div>
+                <div>Day</div>
             </div>
             <div class="div">
                 <input type="text" readonly value="0">
