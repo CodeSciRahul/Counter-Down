@@ -5,7 +5,9 @@ btn.addEventListener("click", () => {
     let getime = time.split(":");
     const date = document.querySelector("#date").value;
     let day=currentDate.getDate();
-    if(date<day)
+    let hour=currentDate.getHours();
+    let minute=currentDate.getMinutes();
+    if(date<day || getime[0]<hour || getime[1]<minute)
     {
         let div=document.querySelector("body>div");
         let txt=document.querySelector("body>div>h3");
