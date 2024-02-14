@@ -1,11 +1,12 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 body{
     display: flex;
@@ -76,7 +77,7 @@ h1{
     padding: 30px 0;
 }
 .ipbt input{
-    width: 22%;
+   min-width: 22%;
     margin: 0 30px;
     border-radius: 10px;
     font-size: 28px;
@@ -113,6 +114,7 @@ h1{
 
 .count_down{
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     gap: 60px;
     margin: 20px 0;
@@ -132,3 +134,35 @@ h1{
 .div :nth-child(2){
     color: whitesmoke;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .ipbt {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .ipbt input {
+      width: 70%;
+      margin: 10px 0;
+    }
+    
+    .ipbt button {
+      width: 70%;
+    }
+    
+    .count_down {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    
+    .count_down .div input {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
